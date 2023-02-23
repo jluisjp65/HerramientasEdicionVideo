@@ -68,7 +68,7 @@ class marcador(bpy.types.Operator):
             ff = aFrame(datos[i+1][2],datos[i+1][3])
             bpy.ops.sequencer.effect_strip_add(type='TEXT', frame_start=fi, frame_end=ff, channel=3)
             bpy.context.active_sequence_strip.text = JLocal+str(setL)+" "+str(datos[i][0])+JVicta+str(setV)+" "+str(datos[i][1])
-            bpy.context.active_sequence_strip.location=[0.7,0.2]
+            bpy.context.active_sequence_strip.location=[0.25,0.2]
             if(datos[i][0] > 10 and (datos[i][0]-datos[i][1])>1):  
                 setL = setL + 1
             if(datos[i][1] > 10 and (datos[i][1]-datos[i][0])>1):  
